@@ -1,0 +1,103 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default Deny Catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        exists(/databases/$(database)/documents/adminUsers/$(request.auth.uid)) ||
+        (request.auth.token.email == 'angelo.smm.uk@gmail.com' && request.auth.token.email_verified == true)
+      );
+    }
+
+    // Product validation
+    function isValidProduct(data) {
+      return data.name is string && data.name.size() > 0 && data.name.size() <= 200
+        && data.slug is string && data.slug.size() <= 200
+        && data.sku is string && data.sku.size() <= 64
+        && data.categoryId is string && data.categoryId.size() <= 64
+        && data.priceKobo is int && data.priceKobo >= 0
+        && data.stockQuantity is int && data.stockQuantity >= 0
+        && (data.status == 'draft' || data.status == 'published' || data.status == 'archived');
+    }
+
+    // Category validation
+    function isValidCategory(data) {
+      return data.name is string && data.name.size() > 0 && data.name.size() <= 100
+        && data.slug is string && data.slug.size() <= 100
+        && data.sortOrder is int
+        && data.active is bool;
+    }
+
+    // Public Order Request validation
+    function isValidOrderRequest(data) {
+      return data.reference is string && data.reference.size() <= 64
+        && data.customerName is string && data.customerName.size() > 0 && data.customerName.size() <= 150
+        && data.customerPhone is string && data.customerPhone.size() > 0 && data.customerPhone.size() <= 50
+        && data.estimatedSubtotalKobo is int && data.estimatedSubtotalKobo >= 0
+        && data.status == 'pending'
+        && data.source == 'website_whatsapp'
+        && (!('staffNotes' in data) || data.staffNotes == null || data.staffNotes == '');
+    }
+
+    // Products collection: public reads published products, admins read/write all
+    match /products/{productId} {
+      allow get, list: if isValidId(productId) && (resource.data.status == 'published' || isAdmin());
+      allow create: if isValidId(productId) && isAdmin() && isValidProduct(incoming());
+      allow update: if isValidId(productId) && isAdmin() && isValidProduct(incoming());
+      allow delete: if isValidId(productId) && isAdmin();
+    }
+
+    // Categories collection: public reads active categories, admins read/write all
+    match /categories/{categoryId} {
+      allow get, list: if isValidId(categoryId) && (resource.data.active == true || isAdmin());
+      allow create: if isValidId(categoryId) && isAdmin() && isValidCategory(incoming());
+      allow update: if isValidId(categoryId) && isAdmin() && isValidCategory(incoming());
+      allow delete: if isValidId(categoryId) && isAdmin();
+    }
+
+    // Order Requests: public can submit valid pending order, only admin can view/manage
+    match /orderRequests/{orderRequestId} {
+      allow create: if isValidId(orderRequestId) && isValidOrderRequest(incoming());
+      allow get, list: if isValidId(orderRequestId) && isAdmin();
+      allow update, delete: if isValidId(orderRequestId) && isAdmin();
+    }
+
+    // Admin Users: privileged access only
+    match /adminUsers/{adminUserId} {
+      allow get, list, write: if isValidId(adminUserId) && isAdmin();
+    }
+
+    // Store Settings: public read, admin update
+    match /storeSettings/{settingId} {
+      allow get, list: if isValidId(settingId);
+      allow write: if isValidId(settingId) && isAdmin();
+    }
+
+    // Audit logs: admin only
+    match /auditLogs/{auditLogId} {
+      allow get, list, write: if isValidId(auditLogId) && isAdmin();
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Prince Paradise Tech Accessories",
+  "description": "POWER YOUR WORLD. Premium tech accessories, high-capacity power banks, hyper-fast chargers, audio, and gadgets with seamless WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

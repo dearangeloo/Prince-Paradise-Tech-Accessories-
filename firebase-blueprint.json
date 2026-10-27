@@ -1,0 +1,136 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Product catalog item in Prince Paradise Tech Accessories",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 200 },
+        "slug": { "type": "string", "maxLength": 200, "pattern": "^[a-z0-9\\-]+$" },
+        "sku": { "type": "string", "maxLength": 64 },
+        "categoryId": { "type": "string", "maxLength": 64 },
+        "shortDescription": { "type": "string", "maxLength": 500 },
+        "description": { "type": "string", "maxLength": 5000 },
+        "priceKobo": { "type": "integer" },
+        "compareAtPriceKobo": { "type": "integer" },
+        "stockQuantity": { "type": "integer" },
+        "lowStockThreshold": { "type": "integer" },
+        "warrantyText": { "type": "string", "maxLength": 500 },
+        "featured": { "type": "boolean" },
+        "status": { "type": "string", "enum": ["draft", "published", "archived"] },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "createdBy": { "type": "string", "maxLength": 128 },
+        "updatedBy": { "type": "string", "maxLength": 128 }
+      },
+      "required": ["name", "slug", "sku", "categoryId", "priceKobo", "stockQuantity", "status"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Product category grouping",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "maxLength": 100 },
+        "slug": { "type": "string", "maxLength": 100, "pattern": "^[a-z0-9\\-]+$" },
+        "description": { "type": "string", "maxLength": 1000 },
+        "sortOrder": { "type": "integer" },
+        "active": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "slug", "active", "sortOrder"]
+    },
+    "OrderRequest": {
+      "title": "OrderRequest",
+      "description": "Customer order inquiry intended for WhatsApp fulfillment",
+      "type": "object",
+      "properties": {
+        "reference": { "type": "string", "maxLength": 64 },
+        "customerName": { "type": "string", "maxLength": 150 },
+        "customerPhone": { "type": "string", "maxLength": 50 },
+        "deliveryArea": { "type": "string", "maxLength": 250 },
+        "estimatedSubtotalKobo": { "type": "integer" },
+        "status": { "type": "string", "enum": ["pending", "contacted", "confirmed", "cancelled", "completed"] },
+        "source": { "type": "string", "enum": ["website_whatsapp"] },
+        "customerInstructions": { "type": "string", "maxLength": 1000 },
+        "staffNotes": { "type": "string", "maxLength": 2000 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "confirmedBy": { "type": "string", "maxLength": 128 },
+        "confirmedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["reference", "customerName", "customerPhone", "estimatedSubtotalKobo", "status", "source"]
+    },
+    "AdminUser": {
+      "title": "AdminUser",
+      "description": "Authorized administrative user",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "displayName": { "type": "string", "maxLength": 150 },
+        "email": { "type": "string", "maxLength": 200 },
+        "role": { "type": "string", "enum": ["admin", "editor"] },
+        "active": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "lastLoginAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role", "active"]
+    },
+    "StoreSettings": {
+      "title": "StoreSettings",
+      "description": "Storewide contact, brand, and policy settings",
+      "type": "object",
+      "properties": {
+        "storeName": { "type": "string", "maxLength": 150 },
+        "motto": { "type": "string", "maxLength": 150 },
+        "logoUrl": { "type": "string", "maxLength": 500 },
+        "whatsappNumber": { "type": "string", "maxLength": 50 },
+        "normalizedWhatsapp": { "type": "string", "maxLength": 50 },
+        "currency": { "type": "string", "maxLength": 10 },
+        "contactEmail": { "type": "string", "maxLength": 200 },
+        "publicContactPhone": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["storeName", "motto", "whatsappNumber", "normalizedWhatsapp"]
+    },
+    "AuditLog": {
+      "title": "AuditLog",
+      "description": "Immutable security and action audit log",
+      "type": "object",
+      "properties": {
+        "actorUid": { "type": "string", "maxLength": 128 },
+        "action": { "type": "string", "maxLength": 100 },
+        "entityType": { "type": "string", "enum": ["product", "category", "order", "settings", "auth"] },
+        "entityId": { "type": "string", "maxLength": 128 },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "summary": { "type": "string", "maxLength": 1000 }
+      },
+      "required": ["actorUid", "action", "entityType", "entityId", "summary"]
+    }
+  },
+  "firestore": {
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Collection of all tech accessory products in the catalog"
+    },
+    "/categories/{categoryId}": {
+      "schema": "Category",
+      "description": "Collection of product categories"
+    },
+    "/orderRequests/{orderRequestId}": {
+      "schema": "OrderRequest",
+      "description": "Collection of customer order requests generated for WhatsApp fulfillment"
+    },
+    "/adminUsers/{adminUserId}": {
+      "schema": "AdminUser",
+      "description": "Authorized staff and administrator accounts"
+    },
+    "/storeSettings/{settingId}": {
+      "schema": "StoreSettings",
+      "description": "Configurable store settings and contact info"
+    },
+    "/auditLogs/{auditLogId}": {
+      "schema": "AuditLog",
+      "description": "Immutable audit entries for administrative actions"
+    }
+  }
+}

@@ -1,0 +1,570 @@
+{
+  "settings": {
+    "storeName": "Prince Paradise Tech Accessories",
+    "motto": "POWER YOUR WORLD",
+    "logoUrl": "/assets/aistudio/1793004952388_f4038399.jpg",
+    "whatsappNumber": "+234 813 572 8645",
+    "normalizedWhatsapp": "2348135728645",
+    "currency": "NGN",
+    "contactEmail": "accessories.princeparadisetech@gmail.com",
+    "publicContactPhone": "+234 813 572 8645",
+    "socialLinks": {
+      "instagram": "https://instagram.com/princeparadisetech",
+      "twitter": "https://twitter.com/princeparadisetech",
+      "facebook": "https://facebook.com/princeparadisetech"
+    },
+    "deliveryInformation": "Nationwide delivery across all 36 Nigerian states and the FCT. Same-day & next-day courier dispatch in Lagos, Abuja, Port Harcourt, and Ibadan. Standard interstate delivery takes 2 to 4 business days. Payment and delivery charges will be confirmed via WhatsApp before dispatch.",
+    "policyContent": {
+      "shipping": "We pack all tech accessories securely with bubble-insulated packaging. Orders are handed over to trusted logistics partners once confirmed. Tracking reference and dispatch receipt will be shared directly to your WhatsApp or email.",
+      "returnsAndWarranty": "Prince Paradise provides a 12-Month Manufacturer Warranty on chargers, power banks, and smart devices against manufacturing defects. Products must be returned in original packaging with proof of purchase. Physical damage, water ingress on non-waterproof items, and customer alterations are excluded.",
+      "privacy": "We respect your privacy. Customer names, telephone numbers, and delivery addresses collected during the WhatsApp order flow are used strictly for order verification, dispatch, and customer service. We do not sell or share your personal data with third-party advertisers.",
+      "terms": "All product descriptions, specifications, and prices are listed in Nigerian Naira. Submitting an order request on this website creates a non-binding reservation inquiry. Final stock availability, applicable delivery fees, and order confirmation occur directly with our verified sales team on WhatsApp before payment."
+    }
+  },
+  "categories": [
+    {
+      "id": "cat-power-banks",
+      "name": "Power Banks",
+      "slug": "power-banks",
+      "description": "High-density, fast-charging portable power banks with digital LED displays and multi-device support.",
+      "image": {
+        "url": "/assets/aistudio/ec2c3d4b-df69-45af-a8a1-93d072dd88d7_7f06612d.png",
+        "altText": "Prince Paradise Power Banks"
+      },
+      "sortOrder": 1,
+      "active": true,
+      "createdAt": 1793062070871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "cat-chargers-cables",
+      "name": "Chargers and Cables",
+      "slug": "chargers-and-cables",
+      "description": "UK 3-pin fused fast chargers, GaN technology power bricks, and military-grade braided cables.",
+      "image": {
+        "url": "/assets/aistudio/ChatGPT_Image_Oct_18__2026__10_30_59_PM_ce5d1274.png",
+        "altText": "Prince Paradise Chargers and Cables"
+      },
+      "sortOrder": 2,
+      "active": true,
+      "createdAt": 1793062070871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "cat-earbuds-audio",
+      "name": "Earbuds and Headphones",
+      "slug": "earbuds-and-headphones",
+      "description": "Crystal-clear sound, active noise cancellation, deep bass, and low-latency gaming audio.",
+      "image": {
+        "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+        "altText": "Prince Paradise Earbuds and Audio"
+      },
+      "sortOrder": 3,
+      "active": true,
+      "createdAt": 1793062070871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "cat-phone-accessories",
+      "name": "Phone Accessories",
+      "slug": "phone-accessories",
+      "description": "Magnetic car mounts, protective cases, wireless charging pads, and ergonomic stands.",
+      "image": {
+        "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+        "altText": "Phone Accessories"
+      },
+      "sortOrder": 4,
+      "active": true,
+      "createdAt": 1793062070871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "cat-smart-devices",
+      "name": "Smart Devices",
+      "slug": "smart-devices",
+      "description": "Smart watches, fitness trackers, Bluetooth adapters, and intelligent daily tech.",
+      "image": {
+        "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+        "altText": "Smart Devices"
+      },
+      "sortOrder": 5,
+      "active": true,
+      "createdAt": 1793062070871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "cat-other-electronics",
+      "name": "Other Electronics",
+      "slug": "other-electronics",
+      "description": "USB-C hubs, OTG adapters, memory readers, and laptop accessories.",
+      "image": {
+        "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+        "altText": "Other Electronics"
+      },
+      "sortOrder": 6,
+      "active": true,
+      "createdAt": 1793062070871,
+      "updatedAt": 1793063070871
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-pb-20k-lilac",
+      "name": "Prince Paradise 20,000mAh Ultra-Slim Digital Display Power Bank",
+      "slug": "prince-paradise-20000mah-ultra-slim-power-bank",
+      "sku": "PPT-PB-20K-LILAC",
+      "categoryId": "cat-power-banks",
+      "shortDescription": "High-capacity 20,000mAh portable charger with gold Prince Paradise crest, circular smart LED digital percentage display, and dual fast-charge ports.",
+      "description": "Power your world anywhere with the flagship Prince Paradise 20,000mAh Ultra-Slim Power Bank. Engineered with high-density lithium-polymer battery cells and an intelligent gold-bezeled circular LED display that shows exact battery percentage at a glance. Features 22.5W Super Charge & 20W Power Delivery bi-directional Type-C charging. Crafted with a premium textured fire-resistant shell bearing the authentic Prince Paradise golden shield emblem.",
+      "specifications": {
+        "Battery Capacity": "20,000mAh (74Wh)",
+        "Digital Display": "Smart LED Circular Percentage Display (0-100%)",
+        "Fast Charge Protocols": "PD 3.0 (20W), QC 3.0, SCP 22.5W, FCP, AFC",
+        "Input Ports": "Type-C: 5V/3A, 9V/2A, 12V/1.5A (18W Max)",
+        "Output Ports": "Type-C (20W PD) + 2x USB-A (22.5W Max)",
+        "Safety Multi-Protection": "Overcharge, Short-Circuit, Temperature Guard",
+        "Weight & Dimensions": "Approx. 340g, 142 x 68 x 24 mm"
+      },
+      "priceKobo": 2850000,
+      "compareAtPriceKobo": 3500000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/ec2c3d4b-df69-45af-a8a1-93d072dd88d7_7f06612d.png",
+          "url": "/assets/aistudio/ec2c3d4b-df69-45af-a8a1-93d072dd88d7_7f06612d.png",
+          "altText": "Prince Paradise 20,000mAh Power Bank with digital LED display and golden crest",
+          "sortOrder": 1
+        }
+      ],
+      "stockQuantity": 45,
+      "lowStockThreshold": 10,
+      "variants": [
+        {
+          "id": "var-color",
+          "name": "Color",
+          "options": [
+            "Lilac Purple (Signature)",
+            "Pearl White",
+            "Matte Black"
+          ]
+        }
+      ],
+      "tags": [
+        "power bank",
+        "20000mah",
+        "fast charge",
+        "digital display",
+        "prince paradise"
+      ],
+      "warrantyText": "12-Month Prince Paradise Manufacturer Warranty",
+      "featured": true,
+      "status": "published",
+      "createdAt": 1793062570871,
+      "updatedAt": 1793063070871,
+      "createdBy": "admin-angelo"
+    },
+    {
+      "id": "prod-ch-120w-uk",
+      "name": "Prince Paradise 120W Hyper Charge UK 3-Pin Super Fast Charger",
+      "slug": "prince-paradise-120w-hyper-charge-uk-adapter",
+      "sku": "PPT-CH-120W-UK",
+      "categoryId": "cat-chargers-cables",
+      "shortDescription": "Ultra-fast 120W Hyper Charge UK standard 3-pin fused adapter with smart heat control, overcharge protection, and universal compatibility.",
+      "description": "The ultimate charging powerhouse for Nigerian homes, offices, and travel. Built specifically with standard UK 3-pin brass terminals with safety fuse protection. Pumps out up to 120W Hyper Charge capability using third-generation GaN semiconductors for maximum power transfer with minimal heat buildup. Safely powers flagship smartphones, tablets, and Type-C laptops at full speed.",
+      "specifications": {
+        "Max Power Output": "120W Hyper Charge",
+        "Plug Standard": "UK 3-Pin (BS 1363 standard with internal safety fuse)",
+        "Protection Architecture": "Overcharge Protection, Smart Heat Control, Surge Suppressor",
+        "Semiconductor": "GaN III (Gallium Nitride) Efficient Chipset",
+        "Compatibility": "Universal (iPhone 15/16, Samsung Galaxy S24, Tecno, Infinix, MacBooks, Dell, HP)",
+        "Input Voltage": "100-240V ~ 50/60Hz (Worldwide voltage support)"
+      },
+      "priceKobo": 2200000,
+      "compareAtPriceKobo": 2750000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/ChatGPT_Image_Oct_18__2026__10_30_59_PM_ce5d1274.png",
+          "url": "/assets/aistudio/ChatGPT_Image_Oct_18__2026__10_30_59_PM_ce5d1274.png",
+          "altText": "Prince Paradise 120W Hyper Charge UK 3-pin Adapter feature diagram",
+          "sortOrder": 1
+        },
+        {
+          "storagePath": "assets/aistudio/ChatGPT_Image_Oct_18__2026__10_29_07_PM_2a63b7b2.png",
+          "url": "/assets/aistudio/ChatGPT_Image_Oct_18__2026__10_29_07_PM_2a63b7b2.png",
+          "altText": "Prince Paradise Fast Safe Reliable UK 3-pin charger",
+          "sortOrder": 2
+        }
+      ],
+      "stockQuantity": 60,
+      "lowStockThreshold": 15,
+      "variants": [
+        {
+          "id": "var-package",
+          "name": "Packaging Option",
+          "options": [
+            "Adapter Only",
+            "Adapter + 100W Fast Cable (+₦3,500)"
+          ]
+        }
+      ],
+      "tags": [
+        "120w",
+        "charger",
+        "uk 3-pin",
+        "hyper charge",
+        "gan"
+      ],
+      "warrantyText": "12-Month Replacement Guarantee",
+      "featured": true,
+      "status": "published",
+      "createdAt": 1793062670871,
+      "updatedAt": 1793063070871,
+      "createdBy": "admin-angelo"
+    },
+    {
+      "id": "prod-ch-65w-travel",
+      "name": "Prince Paradise 65W GaN Dual Type-C + USB-A Travel Charger",
+      "slug": "prince-paradise-65w-gan-travel-charger",
+      "sku": "PPT-CH-65W-TRV",
+      "categoryId": "cat-chargers-cables",
+      "shortDescription": "Compact 65W GaN fast charger with 2x Type-C and 1x USB-A ports. Charge your laptop and phone simultaneously.",
+      "description": "A compact pocket-sized charging solution equipped with GaN technology. Delivers full 65W Power Delivery to charge your laptop or fast-charge up to 3 mobile devices at the same time without overheating. Features durable UK 3-pin pins and fireproof polycarbonate enclosure.",
+      "specifications": {
+        "Total Output": "65W Max",
+        "Port Layout": "2x USB-C PD + 1x USB-A QC 3.0",
+        "Plug Type": "UK 3-Pin Fused",
+        "Fast Charge Protocols": "PD3.0, PPS, QC4+, FCP, AFC",
+        "Efficiency": "94% Energy Conversion"
+      },
+      "priceKobo": 1750000,
+      "compareAtPriceKobo": 2200000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/ChatGPT_Image_Oct_18__2026__10_29_07_PM_2a63b7b2.png",
+          "url": "/assets/aistudio/ChatGPT_Image_Oct_18__2026__10_29_07_PM_2a63b7b2.png",
+          "altText": "Prince Paradise 65W Travel Adapter",
+          "sortOrder": 1
+        }
+      ],
+      "stockQuantity": 35,
+      "lowStockThreshold": 8,
+      "variants": [
+        {
+          "id": "var-color",
+          "name": "Color",
+          "options": [
+            "Pure White",
+            "Space Grey"
+          ]
+        }
+      ],
+      "tags": [
+        "65w",
+        "travel charger",
+        "dual type-c",
+        "laptop charger"
+      ],
+      "warrantyText": "12-Month Prince Paradise Warranty",
+      "featured": true,
+      "status": "published",
+      "createdAt": 1793062770871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "prod-cb-100w-braided",
+      "name": "Prince Paradise 100W Braided Type-C Fast Charging Cable with Watts Indicator",
+      "slug": "prince-paradise-100w-braided-cable-watts-display",
+      "sku": "PPT-CB-100W-LED",
+      "categoryId": "cat-chargers-cables",
+      "shortDescription": "Heavy-duty nylon braided 100W E-marker Type-C cable with real-time digital power display and zinc alloy connectors.",
+      "description": "Never guess your charging speed again. This heavy-duty Prince Paradise cable features an integrated digital power meter showing real-time wattage. With an E-Marker intelligent smart chip supporting up to 100W (20V/5A) and 480Mbps data transfer, it withstands 25,000+ bends.",
+      "specifications": {
+        "Power Rating": "100W (20V/5A E-Marker Smart Chip)",
+        "Data Transfer Rate": "480 Mbps",
+        "Cable Sheath": "Double-braided Military-grade Ballistic Nylon",
+        "Connector Head": "Anti-oxidation Zinc Alloy with Smart LED Display",
+        "Bend Test Durability": "25,000+ Cycles"
+      },
+      "priceKobo": 650000,
+      "compareAtPriceKobo": 850000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/1793004952388_f4038399.jpg",
+          "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+          "altText": "Prince Paradise 100W LED Wattage Cable",
+          "sortOrder": 1
+        }
+      ],
+      "stockQuantity": 120,
+      "lowStockThreshold": 20,
+      "variants": [
+        {
+          "id": "var-length",
+          "name": "Cable Length",
+          "options": [
+            "1.2 Metres (Standard)",
+            "2.0 Metres (Long)"
+          ]
+        }
+      ],
+      "tags": [
+        "cable",
+        "100w",
+        "type-c",
+        "led display",
+        "braided"
+      ],
+      "warrantyText": "6-Month Prince Paradise Warranty",
+      "featured": false,
+      "status": "published",
+      "createdAt": 1793062820871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "prod-earbuds-anc-pro",
+      "name": "Prince Paradise ANC Pro Wireless Noise-Cancelling Earbuds",
+      "slug": "prince-paradise-anc-pro-wireless-earbuds",
+      "sku": "PPT-AUD-ANC-PRO",
+      "categoryId": "cat-earbuds-audio",
+      "shortDescription": "Active Noise Cancellation (-35dB), dynamic 12mm titanium drivers, 36-hour total battery life, and ultra-low latency gaming mode.",
+      "description": "Immerse yourself in rich, studio-grade sound. Prince Paradise ANC Pro combines hybrid active noise cancellation with 12mm custom titanium acoustic drivers, giving you punchy bass and crystalline vocals. Quad-microphone environmental noise cancellation filters out busy market and traffic noise for crystal-clear phone calls.",
+      "specifications": {
+        "Noise Cancellation": "-35dB Hybrid ANC + Transparency Mode",
+        "Driver Size": "12mm Titanium Dynamic Acoustic Drivers",
+        "Battery Life": "8h per charge, 36h with charging case",
+        "Bluetooth Version": "Bluetooth 5.4 with Low Latency Game Mode (45ms)",
+        "Water Resistance": "IPX5 Sweat & Rain Resistant",
+        "Microphones": "4-Mic Environmental Noise Cancellation for Calls"
+      },
+      "priceKobo": 2450000,
+      "compareAtPriceKobo": 3000000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/1793004952388_f4038399.jpg",
+          "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+          "altText": "Prince Paradise ANC Pro Earbuds",
+          "sortOrder": 1
+        }
+      ],
+      "stockQuantity": 28,
+      "lowStockThreshold": 8,
+      "variants": [
+        {
+          "id": "var-color",
+          "name": "Color",
+          "options": [
+            "Matte Black",
+            "Pearl White"
+          ]
+        }
+      ],
+      "tags": [
+        "earbuds",
+        "anc",
+        "audio",
+        "bluetooth 5.4",
+        "noise cancelling"
+      ],
+      "warrantyText": "12-Month Prince Paradise Warranty",
+      "featured": true,
+      "status": "published",
+      "createdAt": 1793062870871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "prod-mag-car-mount",
+      "name": "Prince Paradise Magnetic Wireless Car Charger & Dashboard Mount",
+      "slug": "prince-paradise-magnetic-wireless-car-charger",
+      "sku": "PPT-ACC-MAG-CAR",
+      "categoryId": "cat-phone-accessories",
+      "shortDescription": "15W fast magnetic wireless car charger with auto-aligning N52 rare-earth magnets, 360-degree rotation, and dual air-vent & dash mounts.",
+      "description": "Keep your navigation in view and battery powered on Nigeria’s roads. The Prince Paradise Magnetic Car Mount locks firmly onto phone cases with military-strength N52 magnets that never let go over speed bumps or potholes. Delivers up to 15W wireless charging with smart heat dissipation.",
+      "specifications": {
+        "Wireless Output": "15W / 10W / 7.5W Qi Magnetic",
+        "Mount Mechanisms": "Air Vent Clip + Strong Vacuum Suction Base",
+        "Magnetic Strength": "16x N52 Neodymium Rare Earth Magnets",
+        "Ball Joint": "360° Omnidirectional Rotation",
+        "Safety Mechanism": "FOD (Foreign Object Detection) & Thermal Guard"
+      },
+      "priceKobo": 1400000,
+      "compareAtPriceKobo": 1800000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/1793004952388_f4038399.jpg",
+          "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+          "altText": "Prince Paradise Magnetic Car Charger",
+          "sortOrder": 1
+        }
+      ],
+      "stockQuantity": 18,
+      "lowStockThreshold": 5,
+      "variants": [
+        {
+          "id": "var-mount",
+          "name": "Mount Type",
+          "options": [
+            "Dual Vent + Dash Kit",
+            "Air Vent Only"
+          ]
+        }
+      ],
+      "tags": [
+        "car mount",
+        "magnetic",
+        "wireless charger",
+        "accessories"
+      ],
+      "warrantyText": "12-Month Warranty",
+      "featured": false,
+      "status": "published",
+      "createdAt": 1793062920871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "prod-smart-ultra-watch",
+      "name": "Prince Paradise Smart Watch Ultra Series with AMOLED Display & Bluetooth Calling",
+      "slug": "prince-paradise-smart-watch-ultra-series",
+      "sku": "PPT-SMT-ULTRA",
+      "categoryId": "cat-smart-devices",
+      "shortDescription": "2.02-inch HD AMOLED 60Hz Always-On screen, titanium-alloy casing, Bluetooth phone calling, heart rate & SpO2 monitoring, 7-day battery.",
+      "description": "The ultimate companion for daily productivity and fitness. Featuring a vivid 2.02-inch AMOLED display with 600 nits peak brightness for effortless sunlight readability. Answer calls directly from your wrist, monitor daily heart rate, oxygen, steps, and receive WhatsApp notifications with Nigerian network compatibility.",
+      "specifications": {
+        "Display": "2.02-inch AMOLED, 410x502 resolution, Always-On support",
+        "Chassis": "Aviation-grade Titanium Alloy + Sapphire Glass",
+        "Bluetooth Calling": "Dual HD Microphone & Loudspeaker",
+        "Health Sensors": "24/7 Heart Rate, SpO2 Blood Oxygen, Sleep Analysis",
+        "Battery Life": "Up to 7 Days typical use, 15 Days standby",
+        "Waterproof Standard": "IP68 Waterproof"
+      },
+      "priceKobo": 3800000,
+      "compareAtPriceKobo": 4800000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/1793004952388_f4038399.jpg",
+          "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+          "altText": "Prince Paradise Smart Watch Ultra",
+          "sortOrder": 1
+        }
+      ],
+      "stockQuantity": 14,
+      "lowStockThreshold": 5,
+      "variants": [
+        {
+          "id": "var-strap",
+          "name": "Strap Style",
+          "options": [
+            "Ocean Wave Orange",
+            "Midnight Black Silicone",
+            "Stainless Silver Mesh"
+          ]
+        }
+      ],
+      "tags": [
+        "smart watch",
+        "amoled",
+        "bluetooth calling",
+        "smart devices"
+      ],
+      "warrantyText": "12-Month Prince Paradise Warranty",
+      "featured": true,
+      "status": "published",
+      "createdAt": 1793062970871,
+      "updatedAt": 1793063070871
+    },
+    {
+      "id": "prod-hub-6in1-alu",
+      "name": "Prince Paradise 6-in-1 Aluminum USB-C Hub with 4K HDMI & 100W PD Pass-through",
+      "slug": "prince-paradise-6-in-1-aluminum-usbc-hub",
+      "sku": "PPT-HUB-6IN1-ALU",
+      "categoryId": "cat-other-electronics",
+      "shortDescription": "Sleek aluminum expansion dock with 4K HDMI, 100W Power Delivery port, 3x USB 3.0 (5Gbps), and SD/TF card reader.",
+      "description": "Expand your smartphone, iPad, or laptop into a full workstation. Connect to external monitors or TVs in 4K resolution at 30Hz, transfer files at 5Gbps, and charge your device simultaneously with 100W PD input.",
+      "specifications": {
+        "Video Output": "HDMI 4K @ 30Hz / Full HD 1080p @ 60Hz",
+        "Power Delivery": "USB-C PD 100W Pass-through charging",
+        "Data Ports": "3x USB 3.0 (5Gbps transmission speed)",
+        "Card Slots": "SD and MicroSD / TF slot reader",
+        "Material": "Space Grey CNC Anodized Aluminum Alloy"
+      },
+      "priceKobo": 1950000,
+      "compareAtPriceKobo": 2450000,
+      "images": [
+        {
+          "storagePath": "assets/aistudio/1793004952388_f4038399.jpg",
+          "url": "/assets/aistudio/1793004952388_f4038399.jpg",
+          "altText": "Prince Paradise 6-in-1 Aluminum Hub",
+          "sortOrder": 1
+        }
+      ],
+      "stockQuantity": 22,
+      "lowStockThreshold": 6,
+      "variants": [],
+      "tags": [
+        "usb-c hub",
+        "4k hdmi",
+        "laptop dock",
+        "type-c adapter"
+      ],
+      "warrantyText": "12-Month Warranty",
+      "featured": false,
+      "status": "published",
+      "createdAt": 1793062990871,
+      "updatedAt": 1793063070871
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-1793063106745-7590",
+      "reference": "PPT-202610-7590",
+      "customerName": "Test Customer",
+      "customerPhone": "08135728645",
+      "deliveryArea": "Lagos",
+      "items": [
+        {
+          "productId": "prod-pb-20k-lilac",
+          "productNameSnapshot": "Prince Paradise 20,000mAh Ultra-Slim Digital Display Power Bank",
+          "skuSnapshot": "PPT-PB-20K-LILAC",
+          "quantity": 1,
+          "unitPriceKobo": 2850000
+        }
+      ],
+      "estimatedSubtotalKobo": 2850000,
+      "status": "pending",
+      "source": "website_whatsapp",
+      "customerInstructions": null,
+      "staffNotes": null,
+      "createdAt": 1793063106745,
+      "updatedAt": 1793063106745
+    }
+  ],
+  "adminUsers": [
+    {
+      "uid": "admin-angelo",
+      "displayName": "Angelo Admin",
+      "email": "angelo.smm.uk@gmail.com",
+      "role": "admin",
+      "active": true,
+      "createdAt": 1793058070871,
+      "lastLoginAt": 1793063070871
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit-1793063106757-xmc7",
+      "actorUid": "customer",
+      "action": "CREATE_ORDER_REQUEST",
+      "entityType": "order",
+      "entityId": "order-1793063106745-7590",
+      "timestamp": 1793063106757,
+      "summary": "Order request PPT-202610-7590 created for Test Customer (₦28,500)"
+    },
+    {
+      "id": "audit-init-1793063070871",
+      "actorUid": "system",
+      "action": "SYSTEM_BOOTSTRAP",
+      "entityType": "settings",
+      "entityId": "store-settings",
+      "timestamp": 1793063070871,
+      "summary": "Prince Paradise Tech Accessories store initialized."
+    }
+  ]
+}
